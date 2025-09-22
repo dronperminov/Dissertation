@@ -42,10 +42,10 @@
     \centerfloat{
         \hfill
         \subcaptionbox{\LaTeX}{%
-            \includegraphics[scale=0.27]{latex}}
+            \includegraphics[scale=0.27]{Dissertation/images/ch1/application/spirals_modified.png}}
         \hfill
         \subcaptionbox{Knuth}{%
-            \includegraphics[width=0.25\linewidth]{knuth1}}
+            \includegraphics[width=0.25\linewidth]{Dissertation/images/ch1/application/spirals_modified.png}}
         \hfill
     }
     \caption{Подпись к картинке.}\label{fig:latex}
@@ -65,7 +65,7 @@
 \verb!Synopsis/setup.tex! необходимо присвоить положительное значение
 счётчику \verb!\setcounter{usefootcite}{1}!. В таком случае ссылки на
 работы других авторов будут подстрочными.
-Изложенные в третьей главе результаты опубликованы в~\cite{vakbib1, vakbib2}.
+Изложенные в третьей главе результаты опубликованы в~\cite{synthetic2025unary, perminov2025missing}.
 Использование подстрочных ссылок внутри таблиц может вызывать проблемы.
 
 В \underline{\textbf{четвертой главе}} приведено описание
@@ -94,28 +94,33 @@
     %  * Если цитировать каждый источник отдельной командой --- найти некоторые ошибки будет проще.
     %
     %% authorvak
-    \nocite{vakbib1}%
-    \nocite{vakbib2}%
+    % \nocite{belyaeva2020synthetic}
+    % \nocite{perminov2024slap}%
+    % \nocite{perminov2025missing}%
     %
     %% authorwos
-    \nocite{wosbib1}%
+    \nocite{lukyanov2024extrapolation}%
     %
     %% authorscopus
-    \nocite{scbib1}%
+    % \nocite{scbib1}%
     %
     %% authorpathent
-    \nocite{patbib1}%
+    % \nocite{patbib1}%
     %
     %% authorprogram
     \nocite{progbib1}%
+    \nocite{progbib2}%
+    \nocite{progbib3}%
+    \nocite{progbib4}%
     %
     %% authorconf
-    \nocite{confbib1}%
-    \nocite{confbib2}%
+    \nocite{mitsobi2023}%
+    \nocite{mitsobi2024}%
+    \nocite{mitsobi2025}%
     %
     %% authorother
-    \nocite{bib1}%
-    \nocite{bib2}%
+    % \nocite{bib1}%
+    % \nocite{bib2}%
 
     \ifnumgreater{\value{usefootcite}}{0}{
         \begin{refcontext}[labelprefix={}]
